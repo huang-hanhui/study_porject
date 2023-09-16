@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import HelloWorld from '@/components/HelloWorld.vue'
+import { useMainStore } from "@/store/index.ts"
+
+const mainStore = useMainStore();
 </script>
 
 <template>
@@ -12,9 +15,10 @@ import HelloWorld from '@/components/HelloWorld.vue'
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
+  {{ mainStore.msg }}
 </template>
 
-<style scoped>
+<style scoped lang="less">
 .logo {
   height: 6em;
   padding: 1.5em;
