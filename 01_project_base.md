@@ -1,0 +1,57 @@
+### 以下参考，学习于
+    https://juejin.cn/post/6951649464637636622
+#### 修改 vite 配置文件 （Vite 配置文件 vite.config.ts 位于根目录下，项目启动时会自动读取。）
+#### 下面以修改 路径别名为例
+
+![image-20230917003956230](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917003956230.png)
+
+![image-20230917004410385](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917004410385.png)
+
+如果出现报错标红的情况，要去tsconfig.json 进行修改
+
+![image-20230917004052024](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917004052024.png)
+
+![image-20230917004327211](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917004327211.png)
+
+#### 规范目录结构
+
+![image-20230917004644605](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917004644605.png)
+
+#### 添加 vue-router
+    npm install vue-router@4 or yarn add vue-router@4
+    在 src 下创建 router 目录，然后在 router 目录里新建 index.ts 文件：
+
+![image-20230917005103749](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917005103749.png)
+
+根据本项目路由配置的实际情况，你需要在 `src` 下创建 `views` 目录，用来存储页面组件。
+我们在 views 目录下创建 home.vue 、vuex.vue 、axios.vue。
+
+##### 路由挂载
+
+![image-20230917005303506](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917005303506.png)
+
+#### 添加 状态管理器 pinia
+    npm install pinia or yarn add pinia
+    在 src 目录下创建 store/index.ts 作为状态根文件
+
+![image-20230917005736681](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917005736681.png)
+
+main.ts 挂载
+
+![image-20230917005809607](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917005809607.png)
+
+#### 下载 element-plus
+    npm i element-plus
+
+![image-20230917010037045](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917010037045.png)
+
+![image-20230917010201523](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917010201523.png)
+
+#### 下载 axios
+    npm i axios
+    在 src 目录下 创建 axios/index.ts 参考以下文章 不要过度封装以实用为主
+    https://juejin.cn/post/7209924355803168825
+
+#### css 预编译器
+
+![image-20230917010935205](C:\Users\10670\AppData\Roaming\Typora\typora-user-images\image-20230917010935205.png)
