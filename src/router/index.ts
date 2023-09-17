@@ -1,26 +1,22 @@
-import {
-  createRouter,
-  createWebHashHistory,
-  RouteRecordRaw
-} from 'vue-router'
-import Home from '@/views/home.vue'
-import Vuex from '@/views/pinia.vue'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router"
+import Home from "@/views/home.vue"
+import Vuex from "@/views/pinia.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'Home',
+    path: "/",
+    name: "Home",
     component: Home
   },
   {
-    path: '/pinia',
-    name: 'Pinia',
+    path: "/pinia",
+    name: "Pinia",
     component: Vuex
   },
   {
-    path: '/axios',
-    name: 'Axios',
-    component: () => import('@/views/axios.vue') // 懒加载组件
+    path: "/axios",
+    name: "Axios",
+    component: () => import("@/views/axios.vue") // 懒加载组件
   }
 ]
 
